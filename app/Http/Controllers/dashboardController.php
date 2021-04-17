@@ -9,7 +9,7 @@ class dashboardController extends Controller
 {
     public function index(){
         if(Auth::user()->hasRole('student')){
-            return view('student.dashboard');
+            return view('student.records');
         }elseif(Auth::user()->hasRole('admin')){
             return view('admin.dashboard');
         }
