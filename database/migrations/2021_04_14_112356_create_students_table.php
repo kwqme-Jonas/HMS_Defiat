@@ -14,27 +14,27 @@ class CreateStudentsTable extends Migration
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('surname');
             $table->string('othername')->nullable();
-            $table->bigIncrements('appNumber');
-            $table->bigIncrements('indexnum');
-            $table->bigIncrements('dob');
-            $table->bigIncrements('contact');
+            $table->integer('appNumber');
+            $table->integer('indexnum');
+            $table->integer('dob');
+            $table->integer('contact');
             $table->string('region');
-            $table->bigIncrements('year');
-            $table->bigIncrements('level');
+            $table->integer('year');
+            $table->integer('level');
             $table->string('programme');
             $table->string('department');
             $table->string('hall');
             $table->string('fName');
             $table->string('mName');
-            $table->bigIncrements('fNumber');
-            $table->bigIncrements('mNumber');
+            $table->integer('fNumber');
+            $table->integer('mNumber');
             $table->string('pic')->nullable();
             $table->string('sponsorname')->nullable();
             $table->string('sponsor_add')->nullable();
-            $table->bigIncrements('sponsor_contact')->nullable();
+            $table->integer('sponsor_contact')->nullable();
             $table->string('sponsor_email')->nullable();
             $table->timestamps();
         });
