@@ -16,7 +16,7 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->string('surname');
-            $table->string('othernames');
+            $table->string('othername')->nullable();
             $table->bigIncrements('appNumber');
             $table->bigIncrements('indexnum');
             $table->bigIncrements('dob');
@@ -31,10 +31,11 @@ class CreateStudentsTable extends Migration
             $table->string('mName');
             $table->bigIncrements('fNumber');
             $table->bigIncrements('mNumber');
-            $table->string('sponsorname')->nullible();
-            $table->string('sponsor_add')->nullible();
-            $table->bigIncrements('sponsor_contact')->nullible();
-            $table->string('sponsor_email')->nullible();
+            $table->string('pic')->nullable();
+            $table->string('sponsorname')->nullable();
+            $table->string('sponsor_add')->nullable();
+            $table->bigIncrements('sponsor_contact')->nullable();
+            $table->string('sponsor_email')->nullable();
             $table->timestamps();
         });
     }
