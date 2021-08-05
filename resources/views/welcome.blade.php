@@ -7,7 +7,7 @@
     <div class="h-full flex-col text-center justify-center relative mt-64 sm:mt-45">
     <h1 class="text-5xl font-semibold tracking-tight text-transparent bg-gradient-to-r bg-clip-text from-green-200 to-green-800 focus:outline-none focus:shadow-outline uppercase">Welcome to DefiatHMS</h1>
     <div class="mt-6">
-    <p class="text-white font-semibold tracking-normal text-lg justify-center items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aspernatur. Id quam necessitatibus ullam dicta, perferendis earum asperiores voluptatem neque, officiis, maiores enim delectus. Sunt sint ducimus vitae debitis eum.</p>
+    <p class="text-white font-semibold tracking-normal text-lg justify-center items-center">This platforms serves as the archive for the information on studnts in Defiat Hostel.</p>
     </div>
 
     <div class="mt-6">
