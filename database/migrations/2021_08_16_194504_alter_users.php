@@ -22,12 +22,12 @@ class AlterUsers extends Migration
                 $table->integer('level');
                 $table->string('programme');
                 $table->string('department');
-                $table->string('hall');
+                $table->string('hall')->nullable();
                 $table->string('fName');
                 $table->string('mName');
                 $table->integer('fNumber');
                 $table->integer('mNumber');
-                $table->string('pic')->nullable();
+                $table->string('pic')->default('user.png');
                 $table->string('sponsorname')->nullable();
                 $table->string('sponsor_add')->nullable();
                 $table->integer('sponsor_contact')->nullable();
